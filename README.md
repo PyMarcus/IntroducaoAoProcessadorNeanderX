@@ -2,7 +2,7 @@
 Alguns exercícios aritméticos em assembly para o processador Neander-X
 
 
-A máquina Neander como definida por Weber, é
+A máquina Neander ,como definida por Weber, é
 uma arquitetura rudimentar baseada em acumulador, de
 caráter didático, que pode ser completamente
 apresentada em uma ou duas aulas. Uma análise
