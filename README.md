@@ -16,9 +16,9 @@ vantagens para o ensino em tempo curto.<br>
 Algumas características do processador original da
 máquina Neander incluem:<br>
 Largura de dados e endereços de 8 bits;
-Dados representados em complemento a dois;
-1 acumulador de 8 bits (AC);
-1 apontador de instruções de 8 bits (PC);
-1 registrador de código de condição com 2 bits:
+Dados representados em complemento a dois;<br>
+1 acumulador de 8 bits (AC);<br>
+1 apontador de instruções de 8 bits (PC);<br>
+1 registrador de código de condição com 2 bits:<br>
 negativo (N) e zero (Z).<br>
 Funciona em memória de 256 bits
