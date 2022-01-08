@@ -10,12 +10,23 @@ LDI 3
 STA x
 
 ; entrada dos dados:
-IN 5 ;entrada qualquer
+IN 0 ;entrada qualquer
 STA entrada
 
 ; lógica:
 LDA entrada
 SUB x
+JN Menor
+JMP Soma
+
+; Menor, caso a entrada seja menor que 3
+Menor:
+LDA x
+SUB entrada
+JMP Soma
+
+
+Soma:
 STA resultado
 ADD resultado
 ADD resultado 
