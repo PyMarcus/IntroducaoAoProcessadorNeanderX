@@ -3,14 +3,13 @@
 ; Autor:Marcus V
 ; Data:09/01/2022
 ;---------------------------------------------------
-
 ; Alocacao de variaveis
 limite_inferior EQU 129
 limite_superior EQU 130
 entrada EQU 131
 
 ; inicializacao de variaveis
-LDI 6
+LDI 5
 STA limite_inferior
 LDI 12
 STA limite_superior
@@ -22,6 +21,7 @@ STA entrada
 ; logica do programa
 LDA entrada
 SUB limite_inferior
+JZ IgualA5
 JN Menor
 JMP Verificacao
 
@@ -29,6 +29,9 @@ JMP Verificacao
 Menor:
 LDI 2
 JMP Fim
+
+IgualA5:
+JMP Menor
 
 Verificacao:
 LDA limite_superior
