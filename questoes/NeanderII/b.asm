@@ -31,6 +31,6 @@ JN Repetir
 
 
 ; Fim do programa
-OUT 0
+OUT aExibir
 HLT
 
