@@ -32,6 +32,5 @@ JN Repetir
 
 
 ; Fim do programa
-LDI 0
 OUT 0
 HLT
