@@ -17,7 +17,7 @@ LDI 0
 STA aExibir
 LDI 3
 STA passo
-LDI 13
+LDI 12
 STA limiteSuperior
 
 
@@ -28,9 +28,10 @@ Out 0        ; exibe a variável aExibir
 ADD passo    ; incrementa passo
 STA aExibir  ; a exibir recebe o valor antigo + passo
 SUB limiteSuperior
-JN Repetir
+JNZ Repetir
 
 
 ; Fim do programa
+LDA aExibir
 OUT 0
 HLT
