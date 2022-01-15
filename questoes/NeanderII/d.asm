@@ -4,7 +4,6 @@
 ; Data: 09/01/22
 ;---------------------------------------------------
 
-
 ; Alocação de variáveis:
 aExibir EQU 128
 passo EQU 129
@@ -28,13 +27,13 @@ STA limiteSuperior
 ; Algoritmo lógico
 Repetir:
 LDA aExibir
-Out 0        ; exibe a variável aExibir
-ADD passo    ; incrementa passo
-STA aExibir  ; a exibir recebe o valor antigo + passo
+Out 0         ; exibe a variável 
+ADD passo     ; incrementa passo
+STA aExibir   ; a exibir recebe o valor antigo + passo
 SUB limiteSuperior
 JN Repetir
 
 
 ; Fim do programa
-OUT 0
+OUT passo
 HLT
